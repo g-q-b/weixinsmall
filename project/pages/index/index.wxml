@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="view1">
+  <ul class='ul'>
+    <li class='li'>
+      <span class='span1'>快速下单</span>
+      <span class='span2'>quick order</span>
+      <image src="../../images/kafei.png" class="image"/>
+    </li> 
+    <li class='li'>
+      <span class='span1'>咖啡选择</span>
+      <span class='span2'>to choose</span>
+      <image src="../../images/kafeiji.png" class="image"/>
+    </li>
+    <li class='li'>
+      <span class='span1'>请他咖啡</span>
+      <span class='span2'>Other coffee</span>
+      <image src="../../images/food.png" class="image"/>
+    </li>
+  </ul>
+  <image src="https://ss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/1878377856.jpg" class="image1"/>
+</view>
